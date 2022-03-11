@@ -38,7 +38,7 @@ jobs:
         run: pip3 install .
 
       - name: Run tests
-        run: coverage run pytest . --pyargs
+        run: python -m coverage run pytest . --pyargs
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
