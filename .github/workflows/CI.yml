@@ -38,5 +38,5 @@ jobs:
         run: pip3 install .
 
       - name: Run tests
-        run: pytest . --pyargs
+        run: pytest --cov=j1939 test/
 

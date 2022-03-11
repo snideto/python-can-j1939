@@ -29,6 +29,7 @@ setup(
         "python-can>=3.3.4",
         "numpy >= 1.17.0",
         "pytest >= 6.2.5",
+        "pytest-cov >= 3.0.0",
     ],
     include_package_data=True,
 
