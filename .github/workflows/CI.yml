@@ -38,10 +38,11 @@ jobs:
         run: pip3 install .
 
       - name: Run tests
-        run: pytest --cov-report= --cov=j1939 test/
+        run: pytest --cov-report xml --cov=j1939 test/
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.xml
 
